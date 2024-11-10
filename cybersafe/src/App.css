@@ -1,0 +1,13 @@
+
+
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* RTL styling for Arabic */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}

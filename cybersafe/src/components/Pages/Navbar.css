@@ -1,0 +1,241 @@
+:root {
+    /* Color Variables */
+    --navbar-bg-color: #34495e; /* Navbar background color */
+    --navbar-logo-color: #ecf0f1; /* Logo text color */
+    --navbar-link-color: #ecf0f1; /* Default link color */
+    --navbar-link-hover-color: #ffffff; /* Link hover text color */
+    --navbar-link-active-border: #e67e22; /* Active link underline color */
+    --navbar-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Navbar shadow */
+    --dropdown-bg-color: #2c3e50; /* Dropdown background color */
+    --dropdown-hover-color: #e67e22; /* Dropdown hover text color */
+}
+
+/* General Navbar Styling */
+.navbar {
+    background-color: var(--navbar-bg-color);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: var(--navbar-shadow);
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 50px; /* Horizontal padding */
+}
+
+/* Logo Styles */
+.navbar-logo {
+    color: var(--navbar-logo-color);
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Menu Icon Styles */
+.menu-icon {
+    display: none; /* Hidden by default */
+    color: var(--navbar-logo-color);
+}
+
+/* Navbar Links Styles */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-item {
+    height: 80px;
+    position: relative; /* Needed for positioning the underline */
+}
+
+.nav-links {
+    color: var(--navbar-link-color);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* Vertical and horizontal padding */
+    height: 100%;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Underline Effect */
+.nav-links::after {
+    content: '';
+    display: block;
+    height: 3px; /* Height of underline */
+    background: var(--navbar-link-active-border); /* Underline color */
+    width: 0; /* Start hidden */
+    transition: width 0.3s ease; /* Smooth transition for underline */
+    position: absolute;
+    left: 50%; /* Center the underline */
+    bottom: -4px; /* Position it below the link */
+    transform: translateX(-50%); /* Centering adjustment */
+}
+
+/* Hover and Active States */
+.nav-links:hover {
+    color: var(--navbar-link-hover-color); /* Change text color on hover */
+}
+
+.nav-links:hover::after {
+    width: 100%; /* Show underline on hover */
+}
+
+.nav-links.active::after {
+    width: 100%; /* Keep underline visible for active links */
+}
+
+/* Language Dropdown Styles */
+.language-dropdown {
+    position: relative; /* Positioning for dropdown */
+    margin-left: 20px; /* Spacing for the dropdown */
+}
+
+.language-button {
+    background: transparent;
+    border: none;
+    color: var(--navbar-link-color);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem; /* Padding for the button */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.language-button:hover {
+    color: var(--navbar-link-hover-color); /* Change color on hover */
+}
+
+/* Dropdown Menu */
+.language-options {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position below the button */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    background-color: var(--dropdown-bg-color);
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    z-index: 1000; /* Ensure dropdown is above other elements */
+    padding: 0; /* No padding */
+    margin-top: 5px; /* Space between button and dropdown */
+}
+
+.language-dropdown:hover .language-options {
+    display: block; /* Show dropdown on hover */
+}
+
+.language-options ul {
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.language-options li {
+    padding: 0.5rem 1rem; /* Padding for dropdown items */
+    color: var(--navbar-logo-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.language-options li:hover {
+    background-color: var(--dropdown-hover-color); /* Change background on hover */
+}
+
+/* Sign Up Button Styling */
+.signup-button {
+    background-color: var(--navbar-link-active-border); /* Change to your desired color */
+    color: var(--navbar-logo-color);
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    margin-left: 40px; /* Increased margin to move further to the right */
+}
+
+/* Sign Up Button Hover Effect */
+.signup-button:hover {
+    background-color: #e67e22; /* Change background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Sign Up Button Active State */
+.signup-button:active {
+    transform: translateY(1px); /* Slight press down effect */
+}
+
+/* Mobile Menu Styles */
+.nav-links-mobile {
+    display: none; /* Hidden by default */
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 960px) {
+    .menu-icon {
+        display: block; /* Show menu icon on mobile */
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh; /* Full height for mobile menu */
+        position: absolute;
+        top: 80px; /* Position below the navbar */
+        left: -100%; /* Hidden off-screen */
+        opacity: 0; /* Invisible initially */
+        transition: all 0.5s ease; /* Smooth transition */
+        background-color: var(--navbar-bg-color);
+    }
+
+    .nav-menu.active {
+        left: 0; /* Show menu when active */
+        opacity: 1; /* Make it visible */
+    }
+
+    .nav-item {
+        width: 100%; /* Full width items */
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem; /* Increased padding for mobile */
+        width: 100%;
+    }
+
+    .nav-links-mobile {
+        display: block; /* Show on mobile */
+        text-align: center;
+        padding: 1.5rem;
+        margin: 1rem auto;
+        background: var(--navbar-bg-color);
+        color: var(--navbar-logo-color);
+        text-decoration: none;
+        font-size: 1.5rem; /* Larger text for mobile */
+    }
+}
+
+/* General Icon Styles */
+.globe-icon, .language-options > ul, li {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}

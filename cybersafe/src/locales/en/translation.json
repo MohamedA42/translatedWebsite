@@ -1,0 +1,206 @@
+{
+  "navbar": {
+    "ariaLabel": "Main Navigation",
+    "goToHome": "Go to home page",
+    "toggleNavigation": "Toggle navigation",
+    "home": "Home",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "contactUs": "Contact Us",
+    "signUp": "Sign Up",
+    "changeLanguage": "Change language"
+  },
+  "home": {
+    "welcome": "Welcome to CyberSafe",
+    "tagline": "Your trusted partner in website creation and cybersecurity solutions.",
+    "services": {
+      "title": "Website Creation Services",
+      "cards": {
+        "customDesign": {
+          "title": "Custom Website Design",
+          "content": "Tailored designs that reflect your brand identity."
+        },
+        "responsiveDevelopment": {
+          "title": "Responsive Web Development",
+          "content": "Mobile-friendly websites that look great on any device."
+        },
+        "contentManagement": {
+          "title": "Content Management Systems",
+          "content": "Easily manage your website content with our solutions."
+        },
+        "seo": {
+          "title": "SEO Optimization",
+          "content": "Improve your website's visibility and ranking."
+        }
+      }
+    },
+    "cybersecurity": {
+      "title": "Cybersecurity Tips",
+      "tips": {
+        "strongPasswords": {
+          "title": "Strong Passwords",
+          "content": "Always use strong, unique passwords."
+        },
+        "twoFactor": {
+          "title": "Two-Factor Authentication",
+          "content": "Enable two-factor authentication wherever possible."
+        },
+        "softwareUpdates": {
+          "title": "Keep Software Updated",
+          "content": "Regularly update your software and systems."
+        },
+        "dataBackup": {
+          "title": "Data Backup",
+          "content": "Regularly back up your data to avoid loss."
+        }
+      }
+    },
+    "callToAction": {
+      "title": "Get Started Today!",
+      "content": "Contact us to discuss your website creation and cybersecurity needs.",
+      "button": "Contact Us"
+    }
+  },
+  "aboutUs": {
+    "hero": {
+      "title": "About Us",
+      "description": "Leading the way in innovative website design and robust cybersecurity solutions.",
+      "button": "Learn More"
+    },
+    "story": {
+      "title": "Our Story",
+      "description1": "Founded in 2015, our company has been at the forefront of the digital transformation era, specializing in cutting-edge website design and comprehensive cybersecurity solutions.",
+      "description2": "Over the years, we have evolved into a leading firm with a dedicated team of professionals, delivering exceptional results for clients across various industries."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "valueList": [
+        {
+          "title": "Innovation",
+          "description": "We push the boundaries of technology and creativity to provide state-of-the-art website designs and pioneering cybersecurity solutions."
+        },
+        {
+          "title": "Integrity",
+          "description": "We uphold the highest standards of honesty and transparency, ensuring that our clients receive reliable and trustworthy services."
+        },
+        {
+          "title": "Security",
+          "description": "Our top priority is to protect our clients' digital assets with comprehensive and robust security measures."
+        },
+        {
+          "title": "Excellence",
+          "description": "We are committed to delivering outstanding results and exceeding client expectations in all aspects of our services."
+        }
+      ]
+    },
+    "team": {
+      "title": "Meet Our Experts",
+      "members": [
+        {
+          "role": "Founder & CEO",
+          "description": "With over a decade of experience, Alex leads our team with a vision to drive innovation in web design and cybersecurity."
+        },
+        {
+          "role": "Chief Technology Officer",
+          "description": "Emily ensures our technology stack is up-to-date and robust, leading our cybersecurity efforts with unparalleled expertise."
+        },
+        {
+          "role": "Lead Web Designer",
+          "description": "Michael brings creativity and technical skills to craft visually stunning and user-friendly websites for our clients."
+        }
+      ]
+    },
+    "contactButton": "Contact Us"
+  },
+  "services": {
+    "bannerTitle": "Our Services",
+    "bannerDescription": "Explore the wide range of services we offer to elevate your business.",
+    "websiteAppBuildingDesign": "Website and App Building & Design",
+    "websiteAppBuildingDescription": "We create stunning, user-friendly websites and applications tailored to your needs. Our team of expert designers and developers work together to build intuitive and responsive digital experiences that engage your audience and drive results.",
+    "cybersecurity": "Cybersecurity",
+    "cybersecurityDescription": "Protect your digital assets with our comprehensive cybersecurity solutions. We provide robust security measures to safeguard your data and ensure your business remains protected from emerging threats.",
+    "consulting": "Consulting",
+    "consultingDescription": "Our consulting services help you navigate complex digital challenges with tailored strategies and expert advice.",
+    "seoOptimization": "SEO Optimization",
+    "seoOptimizationDescription": "Enhance your website's visibility and ranking on search engines with our comprehensive SEO services.",
+    "digitalMarketing": "Digital Marketing",
+    "digitalMarketingDescription": "Boost your online presence and effectively reach your target audience with our customized digital marketing strategies.",
+    "maintenance": "Maintenance",
+    "maintenanceDescription": "Ensure the smooth operation of your website or application with our reliable maintenance and support services.",
+    "ctaTitle": "Ready to Get Started?",
+    "ctaDescription": "Contact us today to discuss how we can help your business grow.",
+    "ctaButton": "Get a Quote",
+    "bannerImageAlt": "Banner Image"
+  },
+  "contactUs": {
+    "imageAlt": "Contact Us",
+    "contactInfo": {
+      "title": "Contact Information",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address"
+    },
+    "map": {
+      "title": "Our Location"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "sendMessage": "Send Message",
+      "sending": "Sending...",
+      "successMessage": "Message sent successfully!"
+    }
+  },
+  "footer": {
+    "aboutUs": "About Us",
+    "aboutUsDescription": "We are pioneers in cosmic web design and interstellar cybersecurity solutions. Our mission is to deliver out-of-this-world digital experiences and ensure your galactic safety.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "aboutUsLink": "About Us",
+    "services": "Services",
+    "contactUs": "Contact Us",
+    "followUs": "Follow Us",
+    "email": "Email: ",
+    "phone": "Phone: ",
+    "address": "Address: ",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "footerBottom": "&copy; {{year}} Your Company. All rights reserved."
+  },
+  "signup": {
+    "banner": {
+      "title": "Join Our Community!",
+      "description": "Sign up and become a part of something great.",
+      "alt": "Join Our Community"
+    },
+    "form": {
+      "title": "Create an Account"
+    },
+    "labels": {
+      "username": "Username",
+      "usernameIcon": "Username Icon",
+      "email": "Email",
+      "emailIcon": "Email Icon",
+      "password": "Password",
+      "passwordIcon": "Password Icon"
+    },
+    "placeholders": {
+      "username": "Enter your username",
+      "email": "Enter your email",
+      "password": "Enter your password"
+    },
+    "errors": {
+      "usernameRequired": "Username is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Email is invalid",
+      "passwordRequired": "Password is required",
+      "passwordLength": "Password must be at least 6 characters"
+    },
+    "success": "Successfully signed up!",
+    "buttons": {
+      "submit": "Sign Up",
+      "loading": "Signing Up..."
+    }
+  }
+}

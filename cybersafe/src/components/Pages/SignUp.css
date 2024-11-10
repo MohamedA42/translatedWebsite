@@ -1,0 +1,130 @@
+/* Banner Container */
+.banner {
+    position: relative;
+    overflow: hidden;
+    max-height: 600px; /* Add a maximum height for consistency across devices */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000; /* Fallback background color for performance and SEO */
+}
+
+/* Banner Image */
+.banner-image {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Keeps the aspect ratio */
+    display: block; /* Ensures no gap below the image */
+    object-fit: cover; /* Ensures the image covers the container nicely */
+    filter: brightness(0.8); /* Adds slight darkening for text readability */
+}
+
+/* Banner Content */
+.banner-content {
+    position: absolute; /* Position content over the image */
+    top: 50%; /* Center the content vertically */
+    left: 50%; /* Center the content horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the center */
+    color: #fff; /* White text for contrast */
+    text-align: center; /* Center align text */
+    font-size: 2rem; /* Larger font for better readability */
+    line-height: 1.5; /* Improve readability */
+    padding: 20px; /* Add some padding for mobile-friendliness */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background to make text stand out */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .banner-content {
+        font-size: 1.5rem; /* Smaller text on mobile */
+        padding: 15px; /* Adjust padding for mobile */
+    }
+}
+
+/* Stylish Form Styles */
+.styled-form {
+    max-width: 600px; /* Limits the form width */
+    margin: 30px auto; /* Centers the form and adds some margin from the banner */
+    padding: 30px; /* Adds padding around the form */
+    background-color: #f9f9f9; /* Soft background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Clean and readable font */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px; /* Adds space between form fields */
+}
+
+/* Labels */
+label {
+    display: block; /* Ensures label is on its own line */
+    font-weight: bold; /* Emphasizes label text */
+    color: #333; /* Darker text for contrast */
+    margin-bottom: 8px; /* Space between label and input */
+    font-size: 1.1rem; /* Slightly larger font for readability */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full-width fields */
+    padding: 12px; /* Adds padding for better clickability */
+    font-size: 1rem; /* Larger font for accessibility */
+    border: 1px solid #ccc; /* Light border for input fields */
+    border-radius: 8px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Ensures padding is included in width */
+    transition: border-color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Focus State */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Change border color on focus for visual feedback */
+    outline: none; /* Removes default focus outline */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Adds subtle glow on focus */
+}
+
+/* Textarea */
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Minimum height for textarea */
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%; /* Full-width button */
+    padding: 12px; /* Padding for clickability */
+    background-color: #007bff; /* Button background color */
+    color: white; /* White text for contrast */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1.2rem; /* Larger font for readability */
+    font-weight: bold; /* Emphasizes button */
+    cursor: pointer; /* Shows pointer on hover */
+    transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Submit Button Hover */
+.submit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Adjustments for Form */
+@media screen and (max-width: 768px) {
+    .styled-form {
+        padding: 20px; /* Adjust padding on smaller screens */
+    }
+
+    label {
+        font-size: 1rem; /* Slightly smaller labels */
+    }
+
+    .submit-btn {
+        font-size: 1.1rem; /* Smaller button text for mobile */
+    }
+}

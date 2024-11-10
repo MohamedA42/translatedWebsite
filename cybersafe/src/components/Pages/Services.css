@@ -1,0 +1,159 @@
+.services {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.banner {
+  text-align: center;
+  padding: 60px; /* Increased padding for a more spacious look */
+  background-image: url('https://via.placeholder.com/1600x400'); /* Replace with your banner image URL */
+  background-size: cover; /* Ensure the image covers the entire banner */
+  background-position: center; /* Center the image */
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  position: relative; /* For positioning text over image */
+  height: 500px; /* Increased height for a larger banner */
+}
+
+.banner-content {
+  position: absolute; /* Absolute positioning to center text */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the content */
+  z-index: 1; /* Ensure text is above the image */
+  text-align: center; /* Center text alignment */
+}
+
+.banner-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 1.5em; /* Slightly increased font size for better readability */
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-row {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /* Space between rows */
+}
+
+.service-card {
+  background: white;
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  width: 280px; /* Adjust as needed */
+  position: relative; /* For positioning overlay */
+  overflow: hidden; /* To clip the overlay */
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  margin-bottom: 15px;
+}
+
+.service-icon {
+  width: 60px; /* Adjust size as needed */
+  height: auto;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.description {
+  color: #666;
+  margin-top: 10px;
+  transition: max-height 0.3s ease-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.service-card:hover .description {
+  max-height: 100px; /* Adjust based on your content */
+}
+
+.cta {
+  text-align: center;
+  margin-top: 40px;
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cta h2 {
+  font-size: 2em;
+}
+
+.cta-button {
+  background-color: #f39c12;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner {
+      height: 400px; /* Adjust height for smaller screens */
+      padding: 40px; /* Reduce padding for smaller screens */
+  }
+
+  .banner-content p {
+      font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+
+  .service-row {
+      flex-direction: column; /* Stack on smaller screens */
+      align-items: center; /* Center align */
+  }
+
+  .service-card {
+      width: 90%; /* Make it responsive */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+      height: 300px; /* Further reduce height for very small screens */
+  }
+
+  .banner-content h1 {
+      font-size: 1.8em; /* Adjust font size for smaller screens */
+  }
+
+  .banner-content p {
+      font-size: 1em; /* Adjust font size for smaller screens */
+  }
+}
